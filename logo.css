@@ -1,0 +1,48 @@
+.logo-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.light {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00ff00;
+    animation: flicker 1s infinite alternate;
+}
+
+.light-1 {
+    top: 30%;
+    left: 10%;
+}
+
+.light-2 {
+    top: 60%;
+    left: 30%;
+}
+
+.light-3 {
+    top: 40%;
+    left: 60%;
+}
+
+.light-4 {
+    top: 20%;
+    left: 80%;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
